@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class = "background">
+    <h1 id = "title" class = container>
+        Experience Survey
+    </h1>
+    <p id = "description" class = container>Take this short survey to help us improve! </p>
+    <img src ="https://www.worldatlas.com/r/w768/upload/12/f8/83/coffee-cup.jpg"
+        width = 300>
+    <div id = "main" class = "container">
+    
+        <form id = "survey-form">
+                <label id = "name-label" for = "Name">Name:</label>
+                <input type = "text" required id = "name" placeholder="Enter your Name"style="display:block"><br>
+
+                <label id = "email-label" for = "Email">Email:</label>
+                <input type = "email" required id = "email" placeholder="Enter your Mail ID"style="display:block"><br>
+
+                <label id = "number-label" for = "Number">Number:</label>
+                <input type = "number" min = 0  max = 999999999 required id  = "number" placeholder="Enter your Number"style="display:block; width:70%;"><br>
+                <div id = box>
+                <label  for = "coffee">Preference:</label>
+                    <select id = "dropdown" style = "display:block">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="option 1">Arabica</option>
+                        <option value="option 2">Robusta</option>
+                        <option value="option 3">Decaf</option>
+                        <option value="option 4">Espresso</option>
+                    </select><br>
+                
+                    <div class = "align">
+                        <label  for = "time">How often do you drink coffee?</label><br>
+                        <input type="radio" name="how" value="daily"> Daily Basis<br>
+                        <input type="radio" name="how" value="three"> Once in 3 days<br>
+                        <input type="radio" name="how" value="week"> Weekly<br>
+                    </div>
+                
+                    <div class = "align">
+                       <label for = "feel"> How do you find coffee?</label><br>
+                        <input type="checkbox"value="bitter"/>Bitter
+                        <input type="checkbox"value="refresh"/>Refreshing
+                        <input type="checkbox"value="energy"/>Energizing
+                        <input type="checkbox"value="relax"/>Relaxing
+                    </div>
+
+                    <div style ="margin-top:15px; margin-bottom:15px">
+                        <label for = "feel"> Write about your personal experience</label><br>
+                        <textarea placeholder="Something..." style = "height:75px;"></textarea>
+                    </div>
+                    Click to Submit
+                    <input id = "submit" type="submit" value="Submit">
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

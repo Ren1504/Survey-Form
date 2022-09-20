@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+*{
+    font-family:prata,serif;
+}
+body{
+
+    background:rgb(78, 78, 186);
+    display:flex;
+    justify-content:center;
+}
+
+.container {
+    color: whitesmoke;
+    display:flex;
+    justify-content:center;
+}
+
+img
+{
+    display:block;
+    margin:auto;
+}
+
+#main {
+    margin-top:50px;
+}
+
+label
+{
+    position:relative;
+    right:15px;
+}
+
+#box{
+    margin-top:11px;
+}
+
+option:first {
+    color: #999;
+}
+
+.align{
+    margin-top: 10px;
+}
+.background{
+    background-color:rgba(49, 50, 53, 0.6);
+    width:500px;
+    padding:10px;
+    border-radius:12px;
+
+}
